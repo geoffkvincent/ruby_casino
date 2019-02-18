@@ -1,2 +1,2 @@
 gem 'pry'
-gem 'co'
+gem 'colo'
