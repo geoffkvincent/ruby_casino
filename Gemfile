@@ -1,2 +1,2 @@
 gem 'pry'
-gem 'colo'
+gem 'colori'
