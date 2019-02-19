@@ -7,4 +7,5 @@ def greeting
 end
 
 def menu
+  puts'1)
 end
