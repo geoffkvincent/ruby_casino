@@ -7,5 +7,9 @@ def greeting
 end
 
 def menu
-  puts'1)
+  puts 'Choose a Game'
+  puts '1) Black Jack'
+  puts '2) Poker'
+  puts '2) Roulette'
+  puts '3) Slots'
 end
