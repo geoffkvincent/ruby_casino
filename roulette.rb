@@ -1,6 +1,6 @@
 require 'pry'
 require 'colorize'
-require_relative 'casino'
+
 
 class Roulette
 
@@ -29,7 +29,8 @@ class Roulette
     when 2
       wallet
     when 3
-      casino.greeting
+      require_relative 'casino'
+      Casino.new
     when 4
       exit
     else
