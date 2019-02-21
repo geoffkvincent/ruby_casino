@@ -27,5 +27,12 @@ class Roulette
       game
     when 2
       wallet
+    when 3
+      #casino
+    when 4
+      exit
+    else
+      puts 'Invalid Input'
+    end
   end
 end
