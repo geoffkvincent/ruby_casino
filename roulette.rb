@@ -33,6 +33,14 @@ class Roulette
       exit
     else
       puts 'Invalid Input'
+      menu
     end
   end
+
+  def game
+  end
+
+  def wallet
+  end
+  
 end
