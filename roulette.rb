@@ -1,5 +1,6 @@
 require 'pry'
 require 'colorize'
+require_relative 'casino'
 
 class Roulette
 
@@ -28,7 +29,7 @@ class Roulette
     when 2
       wallet
     when 3
-      #casino
+      casino.greeting
     when 4
       exit
     else
@@ -42,5 +43,5 @@ class Roulette
 
   def wallet
   end
-  
+
 end
