@@ -17,7 +17,15 @@ class Roulette
     puts '2) View Wallet'
     puts '3) Leave Table'
     puts '4) EXIT'.colorize(:red)
-    input = gets.to_i
+    @input = gets.to_i
     menu_options
+  end
+
+  def menu_options
+    case @input
+    when 1
+      game
+    when 2
+      wallet
   end
 end
