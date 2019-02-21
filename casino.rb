@@ -8,9 +8,13 @@ require 'colorize'
 class Casino
 
   def greeting
+    puts ''
+    puts ''
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
     puts '   Welcome To Ruby Casino'
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
+    puts ''
+    puts ''
     menu
   end
 
@@ -18,6 +22,7 @@ class Casino
     puts '======================='
     puts '     Choose a Game'
     puts '======================='
+    puts ''
     puts '1) Black Jack'
     puts '2) Poker'
     puts '3) Roulette'
