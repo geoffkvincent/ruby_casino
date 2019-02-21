@@ -8,16 +8,21 @@ require 'colorize'
 class Casino
 
   def greeting
-    puts 'Welcome To Ruby Casino'
+    puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
+    puts '   Welcome To Ruby Casino'
+    puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
     menu
   end
 
   def menu
-    puts 'Choose a Game'
+    puts '======================='
+    puts '     Choose a Game'
+    puts '======================='
     puts '1) Black Jack'
     puts '2) Poker'
     puts '3) Roulette'
     puts '4) Slots'
+    puts '5) EXIT'.colorize(:red)
     @menu_input = gets.to_i
     menu_options
   end
@@ -32,6 +37,8 @@ class Casino
       Roulette.new
     when 4
       Slots.new
+    when 5
+      exit
     else
       puts 'Inavalid Input'.colorize(:red)
     end
