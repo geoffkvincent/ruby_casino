@@ -4,7 +4,9 @@ require 'colorize'
 class BlackJack
 
   def initialize
-    puts 'welcaome to black jack'
+    puts '============================'
+    puts '         BLACK JACK         '
+    puts '============================'
   end
 
 end

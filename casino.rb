@@ -27,11 +27,11 @@ class Casino
     when 1
       BlackJack.new
     when 2
-      #poker
+      Poker.new
     when 3
-      #Roulette
+      Roulette.new
     when 4
-      #slots
+      Slots.new
     else
       puts 'Inavalid Input'.colorize(:red)
     end
