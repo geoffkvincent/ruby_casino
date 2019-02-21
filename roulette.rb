@@ -15,5 +15,9 @@ class Roulette
     puts 'please make a selection'
     puts '1) Play'
     puts '2) View Wallet'
+    puts '3) Leave Table'
+    puts '4) EXIT'.colorize(:red)
+    input = gets.to_i
+    menu_options
   end
 end
