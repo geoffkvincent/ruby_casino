@@ -1,3 +1,7 @@
+require_relative 'black_jack'
+require_relative 'poker'
+require_relative 'roulette'
+require_relative 'slots'
 require 'pry'
 require 'colorize'
 
@@ -21,7 +25,7 @@ class Casino
   def menu_options
     case @menu_input
     when 1
-      # black jack
+      BlackJack.new
     when 2
       #poker
     when 3
