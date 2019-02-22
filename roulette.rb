@@ -10,7 +10,7 @@ class Roulette
     puts '============================'
     puts '          ROULETTE          '
     puts '============================'
-    
+    play
   end
   
   def play
