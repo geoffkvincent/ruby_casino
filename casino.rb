@@ -2,23 +2,16 @@ require_relative 'black_jack'
 require_relative 'poker'
 require_relative 'roulette'
 require_relative 'slots'
+require_relative 'player'
 require 'pry'
 require 'colorize'
 
 class Casino
 
-  def greeting
-    puts ''
-    puts ''
+  def menu
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
     puts '   Welcome To Ruby Casino'
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
-    puts ''
-    puts ''
-    menu
-  end
-
-  def menu
     puts '======================='
     puts '     Choose a Game'
     puts '======================='
