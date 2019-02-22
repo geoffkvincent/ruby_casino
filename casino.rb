@@ -22,7 +22,8 @@ class Casino
     puts '2) Poker'
     puts '3) Roulette'
     puts '4) Slots'
-    puts '5) EXIT'.colorize(:red)
+    puts '5) View Wallet'
+    puts '6) EXIT'.colorize(:red)
     puts '========================'
     @menu_input = gets.to_i
     menu_options
@@ -39,10 +40,23 @@ class Casino
     when 4
       Slots.new
     when 5
+      wallet
+    when 6
       exit
     else
       puts 'Inavalid Input'.colorize(:red)
     end
+  end
+
+  def wallet
+    puts '=====WALLET======'
+    puts "Hey #{@player.name}."
+    puts "You have $#{@player.money} left"
+    sleep(3)
+    puts 'taking you back to main menu'
+    sleep(2)
+    puts `clear`
+    menu
   end
 
 end

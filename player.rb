@@ -1,5 +1,5 @@
 class Player
-  attr_acessor :name, :money
+  attr_accessor :name, :money
   def initialize
     puts 'Whats your name?'
     @name = gets.strip
