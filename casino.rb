@@ -10,13 +10,14 @@ class Casino
 
   def initialize
     @player = Player.new
-    menu
+    casino_menu
   end
 
-  def menu
+  def casino_menu
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
     puts '   Welcome To Ruby Casino'
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
+    sleep(2)
     puts '======Choose a Game====='
     puts '1) Black Jack'
     puts '2) Poker'
@@ -36,13 +37,16 @@ class Casino
     when 2
       Poker.new
     when 3
-      Roulette.new
+      Roulette.new(@player)
     when 4
       Slots.new
     when 5
       wallet
     when 6
       exit
+      puts 'Goodbye'
+      sleep(2)
+      puts `clear`
     else
       puts 'Inavalid Input'.colorize(:red)
     end
