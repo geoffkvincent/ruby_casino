@@ -53,8 +53,8 @@ class Casino
     puts "Hey #{@player.name}."
     puts "You have $#{@player.money} left"
     sleep(3)
-    puts 'taking you back to main menu'
-    sleep(2)
+    puts '....taking you back to main menu'
+    sleep(3)
     puts `clear`
     menu
   end
