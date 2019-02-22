@@ -8,19 +8,22 @@ require 'colorize'
 
 class Casino
 
+  def initialize
+    @player = Player.new
+    menu
+  end
+
   def menu
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
     puts '   Welcome To Ruby Casino'
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
-    puts '======================='
-    puts '     Choose a Game'
-    puts '======================='
-    puts ''
+    puts '======Choose a Game====='
     puts '1) Black Jack'
     puts '2) Poker'
     puts '3) Roulette'
     puts '4) Slots'
     puts '5) EXIT'.colorize(:red)
+    puts '========================'
     @menu_input = gets.to_i
     menu_options
   end
@@ -44,5 +47,4 @@ class Casino
 
 end
 
-casino = Casino.new
-casino.greeting
+Casino.new
