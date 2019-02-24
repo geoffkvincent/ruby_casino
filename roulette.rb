@@ -20,7 +20,3 @@ class Roulette
   
 
 end
-
-
-
-
