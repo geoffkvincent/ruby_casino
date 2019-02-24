@@ -14,7 +14,7 @@ class Roulette
   end
   
   def play
-    
+
   end
 
   
